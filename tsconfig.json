@@ -1,0 +1,69 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "rootDirs": ["src/__generated__", "src/**/__generated__"],
+    "baseUrl": ".",
+    "paths": {
+      "@static/*": [
+        "./public/static/*"
+      ],
+      "@generated/*": [
+        "./src/__generated__/*",
+      ],
+      "$cypress/*": [
+        "./cypress/*",
+      ],
+      "@*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next.config.js",
+    "public",
+    "cypress",
+    "jest.setup.js",
+    "release.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.graphql",
+    "cache/Cypress/**"
+  ]
+}
